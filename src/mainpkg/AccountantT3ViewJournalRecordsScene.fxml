@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #c3b1bf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AccountantT3ViewJournalRecordsSceneController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="94.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Journal Records">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="journalTable" prefHeight="513.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn fx:id="dateColumn" prefWidth="117.0" text="Date" />
+                  <TableColumn fx:id="AccountsColumn" prefWidth="241.0" text="Accounts" />
+                  <TableColumn fx:id="debitColumn" prefWidth="124.0" text="Debit" />
+                  <TableColumn fx:id="creditColumn" prefWidth="117.0" text="Credit" />
+               </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="606.0" prefWidth="180.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="filterDateDatePicker" prefHeight="35.0" prefWidth="200.0" promptText="Filter Date" />
+            <Button mnemonicParsing="false" onMouseClicked="#viewJournalRecordsOnCLick" prefHeight="45.0" prefWidth="170.0" text="View Journal Records from Selected Date" textAlignment="CENTER" wrapText="true" />
+            <Button mnemonicParsing="false" onMouseClicked="#loadJournalRecordsFromBinFile" prefHeight="35.0" prefWidth="200.0" text="Load All Journal Records" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="556.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 0 10 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Tasks" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="23.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#dashboardSceneOnClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 30;" text="Go Back to Dashboard" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="20.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#LogoutOnCLick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 30;" text="Logout" textAlignment="CENTER" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>

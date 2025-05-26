@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.BorrowerT1ApplyForLoanSceneController">
+   <content>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="996.0" prefWidth="1000.0" style="-fx-background-color: AEC2B6;">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="556.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 0 10 0 0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Tasks" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="33.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#dashboardSceneOnClick" prefHeight="42.0" prefWidth="211.0" style="-fx-background-radius: 30;" text="Go Back to Dashboard" textAlignment="CENTER" wrapText="true" />
+                  <Button layoutX="20.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#logoutOnClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 30;" text="Logout" textAlignment="CENTER" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </left>
+         <top>
+            <VBox alignment="CENTER" prefHeight="94.0" prefWidth="896.0" style="-fx-background-color: AEC2B6; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" text="Apply for Loan">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="37.0" layoutY="45.0" prefHeight="583.0" prefWidth="184.0" spacing="3.0">
+                     <children>
+                        <Label prefHeight="3.0" prefWidth="62.0" text="Name" />
+                        <TextField fx:id="nameTextField" prefHeight="12.0" prefWidth="191.0" />
+                        <Label prefHeight="8.0" prefWidth="68.0" text="Date of Birth" />
+                        <DatePicker fx:id="dateOfBirthDatePicker" prefHeight="25.0" prefWidth="209.0" />
+                        <Label prefHeight="8.0" prefWidth="21.0" text="NID" />
+                        <TextField fx:id="nidTextField" prefHeight="25.0" prefWidth="173.0" />
+                        <Label layoutX="10.0" layoutY="490.0" prefHeight="5.0" prefWidth="30.0" text="e-TIN" />
+                        <TextField fx:id="eTinTextField" layoutX="10.0" layoutY="530.0" prefHeight="25.0" prefWidth="151.0" />
+                        <Label text="Address" />
+                        <TextField fx:id="addressTextField" prefHeight="21.0" prefWidth="193.0" />
+                        <Label text="Passport No." />
+                        <TextField fx:id="passportNoTextField" prefHeight="25.0" prefWidth="167.0" />
+                        <Label text="Occupation" />
+                        <TextField fx:id="occupationTextField" prefHeight="25.0" prefWidth="151.0" />
+                        <Label layoutX="10.0" layoutY="262.0" text="Number of Family Members" />
+                        <TextField fx:id="noOfFamilyMembersTextField" layoutX="10.0" layoutY="279.0" prefHeight="25.0" prefWidth="151.0" />
+                        <Label layoutX="10.0" layoutY="304.0" text="Monthly Salary" />
+                        <TextField fx:id="monthlySalaryTextField" layoutX="10.0" layoutY="321.0" prefHeight="25.0" prefWidth="151.0" />
+                        <Label layoutX="10.0" layoutY="346.0" text="Location of the Land" />
+                        <TextField fx:id="locationOfTheLandTextField" layoutX="10.0" layoutY="363.0" prefHeight="25.0" prefWidth="151.0" />
+                        <Label layoutX="10.0" layoutY="388.0" text="Potential rent per sq.ft " />
+                        <TextField fx:id="potentialRentPerSqFtTextField" layoutX="10.0" layoutY="405.0" prefHeight="25.0" prefWidth="151.0" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="242.0" layoutY="333.0" text="Company Name" />
+                  <TextField fx:id="companyNameTextField" layoutX="241.0" layoutY="353.0" prefHeight="25.0" prefWidth="167.0" />
+                  <TextField fx:id="positionTextField" layoutX="426.0" layoutY="353.0" prefHeight="25.0" prefWidth="169.0" />
+                  <Label layoutX="427.0" layoutY="334.0" text="Position" />
+                  <TextField fx:id="locationTextField" layoutX="612.0" layoutY="353.0" prefHeight="25.0" prefWidth="169.0" />
+                  <Label layoutX="613.0" layoutY="334.0" text="Location" />
+                  <Label layoutX="242.0" layoutY="525.0" text="Loan Amount Requested" />
+                  <Label layoutX="85.0" layoutY="646.0" text="Terms and Condition ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="loanAmountRequestedTextField" layoutX="241.0" layoutY="545.0" prefHeight="25.0" prefWidth="167.0" />
+                  <Label fx:id="outputLabel" graphicTextGap="5.0" layoutX="85.0" layoutY="672.0" prefHeight="98.0" prefWidth="630.0" style="-fx-background-color: DBE4C6; -fx-background-radius: 5;" text="The above information is true. I have not concealed any information.In view of the information provided I request permission to supply my loan application form by approving the initial application. I, have no objection if the loan application is canceled due to any mistake in the information provided by me or due to any rules and regulations of the corporation." textAlignment="JUSTIFY" wrapText="true">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <RadioButton fx:id="agreeRadioButton" layoutX="221.0" layoutY="646.0" mnemonicParsing="false" text="I Agree" />
+                  <RadioButton fx:id="disagreeRadioButton" layoutX="296.0" layoutY="646.0" mnemonicParsing="false" text="I Disagree" />
+                  <Button layoutX="326.0" layoutY="803.0" mnemonicParsing="false" onMouseClicked="#submitLoanApplicationOnClick" prefHeight="29.0" prefWidth="148.0" style="-fx-background-radius: 5;" text="Submit Loan Application" wrapText="true" />
+                  <Label layoutX="427.0" layoutY="525.0" text="Loan Type" />
+                  <ComboBox fx:id="loanTypeComboBox" layoutX="427.0" layoutY="545.0" prefHeight="25.0" prefWidth="167.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

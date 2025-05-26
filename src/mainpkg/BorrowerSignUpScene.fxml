@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: AEC2B6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.BorrowerSignUpSceneController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="323.0" layoutY="86.0" prefHeight="475.0" prefWidth="355.0" spacing="20.0" style="-fx-background-color: AEC2B6; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/logo.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="32.0" prefWidth="315.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: null;" text="NID:" />
+                        <TextField fx:id="nidTextField" alignment="CENTER" prefHeight="30.0" prefWidth="197.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="263.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: null;" text="Name:" />
+                        <TextField fx:id="nameTextField" alignment="CENTER" prefHeight="30.0" prefWidth="197.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="263.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: null;" text="Date of Birth:" />
+                        <DatePicker fx:id="dobDatePicker" prefHeight="30.0" prefWidth="197.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="19.0" prefWidth="315.0" spacing="25.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: null;" text="Gender:" />
+                        <RadioButton fx:id="maleRB" mnemonicParsing="false" prefHeight="17.0" prefWidth="63.0" text="Male" />
+                        <RadioButton fx:id="femaleRB" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Female" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="315.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: null;" text="Password:" />
+                        <PasswordField fx:id="passwordTextField" alignment="CENTER" prefHeight="30.0" prefWidth="197.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" />
+               </padding>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+            <Button layoutX="436.0" layoutY="599.0" mnemonicParsing="false" onMouseClicked="#signUpOnClick" prefHeight="35.0" prefWidth="128.0" style="-fx-background-radius: 5;" text="Sign Up" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

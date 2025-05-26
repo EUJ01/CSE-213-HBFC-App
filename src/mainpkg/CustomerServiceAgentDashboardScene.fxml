@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #97DECE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CustomerServiceAgentDashboardSceneController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="556.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: White; -fx-background-radius: 0 10 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Tasks" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="33.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#confirmBorrowerPaymentOnClick" prefHeight="42.0" prefWidth="211.0" style="-fx-background-radius: 30;" text="Confirm Borrower's Payment" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="23.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#requestOfficeSuppliesOnClick" prefHeight="42.0" prefWidth="230.0" style="-fx-background-radius: 30;" text="Request Office Supplies" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="23.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#resolveBorrowerComplaintOnClick" prefHeight="42.0" prefWidth="230.0" style="-fx-background-radius: 30;" text="Resolve Borrower's Complaint" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="23.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#generateComplainReportOnClick" prefHeight="42.0" prefWidth="252.0" style="-fx-background-radius: 30;" text="Generate Complain Report" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="23.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#updatePoliciesOnClick" prefHeight="42.0" prefWidth="231.0" style="-fx-background-radius: 30;" text="Update Policies" />
+            <Button layoutX="23.0" layoutY="385.0" mnemonicParsing="false" onMouseClicked="#sendNoticeOnClick" prefHeight="42.0" prefWidth="286.0" style="-fx-background-radius: 30;" text="Send Notice To Supervisor" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="23.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#sendSurveyOnClick" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30;" text="Send Survey" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="23.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#updateBorrowerProfileOnClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 30;" text="Update Borrower's Profile" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="20.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#complainBoxOnClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 30;" text="Complaint Box" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="20.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#logOutOnClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-radius: 30;" text="Logout" textAlignment="CENTER" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="596.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 10 0 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Notifications">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="customerServiceAgentNotificationTextArea" prefHeight="495.0" prefWidth="180.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <top>
+      <VBox alignment="CENTER" prefHeight="94.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" text="Customer Service Agent Dashboard">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="570.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="customerServiceAgentNameLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, ">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <TextArea fx:id="cutomerServiceAgentTextArea" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
